@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found | lanfer.me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen px-4">
+    <div class="text-center max-w-md animate-fade-in">
+      <!-- Cartoon Character SVG -->
+      <div class="mx-auto w-40 h-40 mb-6">
+        <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="256" cy="256" r="256" fill="#FCD34D"/>
+          <circle cx="180" cy="200" r="20" fill="#000"/>
+          <circle cx="332" cy="200" r="20" fill="#000"/>
+          <path d="M200 300 Q256 350 312 300" stroke="#000" stroke-width="12" stroke-linecap="round"/>
+          <path d="M256 120 C220 100 220 80 240 60" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <h1 class="text-6xl font-extrabold text-red-500">404</h1>
+      <p class="text-xl mt-4 text-gray-700">Uff... Wo bin ich hier gelandet?</p>
+      <p class="text-sm text-gray-500 mt-2">Diese Seite existiert leider nicht.</p>
+
+      <a
+        href="/"
+        class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-medium hover:bg-blue-700 transition"
+        >Zurück zur Startseite</a
+      >
+    </div>
+
+    <style>
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out;
+      }
+    </style>
+  </body>
+</html>
