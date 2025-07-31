@@ -1,7 +1,79 @@
-<html>
-  <head><title>Welcome</title></head>
-  <body>
-    <h1>Hello from lanfer.me!</h1>
-    <p>This is my website! Plenty of things planned for this space</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to lanfer.me</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(270deg, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: backgroundMove 20s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      animation: fadeIn 3s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .buttons {
+      margin-top: 2em;
+      display: flex;
+      gap: 1em;
+    }
+
+    .btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid white;
+      padding: 0.7em 1.5em;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #1e3c72;
+      box-shadow: 0 0 15px white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to lanfer.me</h1>
+  <p>This is my personal site, hosted on GitHub Pages and proudly owned by me.</p>
+  <div class="buttons">
+    <a href="about.html" class="btn">About Me</a>
+    <a href="photos.html" class="btn">Photos</a>
+    <a href="mailto:tom@lanfer.me" class="btn">Contact</a>
+  </div>
+</body>
 </html>
